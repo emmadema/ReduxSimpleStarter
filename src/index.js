@@ -5,11 +5,16 @@
 //Show on page: Tkae this components gnerated HTMl and put it in the DOM
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './components/search_bar';
 
 const API_KEY = 'AIzaSyC9bLal_hxKk-zOwrdtGCb_zPh9ld5v0y0';
 
 const App = () => {
-	return <div>Hi!</div>;
+	return (
+		<div>
+			<SearchBar />
+		</div>
+	);
 }
 
 ReactDOM.render(<App />, document.querySelector('.container'));
